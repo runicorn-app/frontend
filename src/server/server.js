@@ -1,6 +1,6 @@
 import express from 'express';
 import { render } from './handler';
-import App from '../src/App';
+import App from '../client/App';
 
 module.exports.app = express()
 .use('*', (req, res) => {
