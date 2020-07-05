@@ -5,8 +5,6 @@ import Landing from './components/Landing';
 import Register from './components/Register';
 import Login from './components/Login';
 
-import './App.css';
-
 const App = () => (
   <Fragment>
     <Navbar />
