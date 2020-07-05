@@ -8,18 +8,14 @@ import Login from './components/Login';
 import './App.css';
 
 const App = () => (
-  <Router>
-    <Fragment>
-      <Navbar />
+  <Fragment>
+    <Navbar />
+    <Switch>
+      <Route exact path='/register' component={Register} />
+      <Route exact path='/login' component={Login} />
       <Route exact path='/' component={Landing} />
-      <section className='container'>
-        <Switch>
-          <Route exact path='/register' component={Register} />
-          <Route exact path='/login' component={Login} />
-        </Switch>
-      </section>
-    </Fragment>
-  </Router>
+    </Switch>
+  </Fragment>
 );
 
 export default App;
